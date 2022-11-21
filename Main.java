@@ -1,6 +1,11 @@
+//7) Java Program to print the elements of an array present on odd position
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to BridgeLabz-Day3Practice Main Branch");
-        System.out.println("Welcome to 3.7_IsOddInArray Branch");
+        int [] arr = new int [] {1, 2, 3, 4, 5};
+        System.out.println("Elements of given array present on odd position: ");
+        for (int i = 0; i < arr.length; i = i+2) {
+            System.out.println(arr[i]);
+        }
     }
 }

@@ -1,6 +1,22 @@
+//4) Java Program to print the smallest element in an array
+
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to BridgeLabz-Day3Practice Main Branch");
-        System.out.println("Welcome to 3.4_SmallestInArray Main Branch");
+        Scanner value = new Scanner(System.in);
+        System.out.print("Enter the number of elements you want to store: ");
+        int n=value.nextInt();
+        int[] array = new int[n];
+        System.out.println("Enter the elements of the array: ");
+        for(int i=0; i<n; i++){
+            array[i]=value.nextInt();
+        }
+        int min = array[0];
+        for (int j : array) {
+            if (j < min)
+                min = j;
+        }
+        System.out.println("Largest element present in given array: " + min);
     }
 }
